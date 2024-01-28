@@ -1,0 +1,51 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="DispMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="warning"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Inicio</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <img style="padding-top: 20%; padding-bottom: 5%; padding-left: 30%; padding-right: 30%;;" src="assets/img/pfp.png" alt="Foto de Perfil">
+
+  <p class="txtCent">Bienvenido/a, {{usuario.nombre}}</p>
+
+<ng-template [ngIf]="usuario.rol=='profesor'">
+  <ion-button routerLink="/generar-qr" expand="block" fill="solid" color="warning">
+    Generar QR
+  </ion-button>
+</ng-template>
+
+<ng-template [ngIf]="usuario.rol=='alumno'">
+
+  <ion-button routerLink="/camara" expand="block" fill="solid" color="warning">
+    Escanear QR
+  </ion-button>
+
+  <h1 class="txtCent">Lunes 22 Enero 2024</h1>
+      
+      <ion-card class="horarioCard" *ngFor="let a of horarios; let i=index">
+        <ion-card-header>
+          <ion-card-title><p style="color: rgb(255, 255, 255);">{{ a['nombre']}}</p></ion-card-title>
+          <ion-card-subtitle><p style="color: rgb(218, 244, 255);">Sala: {{ a['sala']}}</p></ion-card-subtitle>
+        </ion-card-header>
+        
+        <ion-card-content>
+          <p style="color: rgb(255, 255, 255);">Profesor/a: {{ a['prof']}}</p><br>
+          <p style="color: rgb(255, 255, 255);">Horas: {{ a['hora']}}</p>
+        </ion-card-content>
+      </ion-card>
+
+</ng-template>
+
+</ion-content>

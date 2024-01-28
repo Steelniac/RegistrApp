@@ -1,0 +1,93 @@
+{
+  "horarios": [
+    {
+      "id": 1,
+      "dia": "Lunes",
+      "nombre": "Programacion APP Moviles",
+      "prof": "Eduardo Baeza",
+      "hora": "10:00  -  11:20  Hrs",
+      "sala": "MP-LINF 210"
+    },
+    {
+      "id": 2,
+      "dia": "Lunes",
+      "nombre": "Calidad Software",
+      "prof": "Christian Horner",
+      "hora": "11:30  -  13:00 Hrs",
+      "sala": "MP-LINF 210"
+    },
+    {
+      "id": 3,
+      "dia": "Lunes",
+      "nombre": "Estadistica Descriptiva",
+      "prof": "Carca Farfan",
+      "hora": "13:40  -  15:00 Hrs",
+      "sala": "MP-LINF 208"
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nombre": "Nicolas Solis",
+      "n_usuario": "nico.sol",
+      "telefono": "+56972792779",
+      "password": "nicolo60",
+      "rol": "alumno",
+      "isactive": true
+    },
+    {
+      "id": 2,
+      "nombre": "Cris",
+      "n_usuario": "cris.ben",
+      "telefono": "+56974233542",
+      "password": "crisbena80",
+      "rol": "alumno",
+      "isactive": true
+    },
+    {
+      "id": 3,
+      "nombre": "Maria",
+      "n_usuario": "maria.gaj",
+      "telefono": "+56922394312",
+      "password": "Maria1234",
+      "rol": "alumno",
+      "isactive": true
+    },
+    {
+      "id": 4,
+      "nombre": "carlos",
+      "n_usuario": "carlos.pina",
+      "telefono": "+56936868834",
+      "password": "carlongo123",
+      "rol": "alumno",
+      "isactive": true
+    },
+    {
+      "id": 5,
+      "nombre": "claudio",
+      "n_usuario": "claudio.gallo",
+      "telefono": "+56979090334",
+      "password": "claudiodos",
+      "rol": "alumno",
+      "isactive": true
+    },
+    {
+      "nombre": "Armando Banquito",
+      "n_usuario": "arm.banquito",
+      "telefono": "+56965455421",
+      "password": "126958064asd",
+      "rol": "alumno",
+      "isactive": true,
+      "id": 6
+    },
+    {
+      "id": 7,
+      "nombre": "Marcelo Matamala",
+      "n_usuario": "mar.matamala",
+      "telefono": "+56999835846",
+      "password": "126958064asd",
+      "rol": "profesor",
+      "isactive": true
+    }
+  ]
+}

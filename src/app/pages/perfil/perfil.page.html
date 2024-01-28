@@ -1,0 +1,31 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="DispMenu()">
+        <ion-icon slot="icon-only" name="menu-outline" color="warning"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Perfil</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Perfil</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title><p style="color: rgb(255, 255, 255);">{{ usuario.nombre }}</p></ion-card-title>
+      <ion-card-subtitle><p style="color: rgb(218, 244, 255);">Usuario: {{ usuario.n_usuario}}</p></ion-card-subtitle>
+      <ion-card-subtitle><p style="color: rgb(218, 244, 255);">Rol: {{ usuario.rol}}</p></ion-card-subtitle>
+      <ion-card-subtitle><p style="color: rgb(218, 244, 255);">Telefono: {{ usuario.telefono }}</p></ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-button [routerLink]="['/editar-perfil', usuario.id]" expand="block" fill="solid" color="warning">
+      Editar Perfil
+    </ion-button>
+
+  <ion-content>
